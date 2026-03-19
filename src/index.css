@@ -1,0 +1,124 @@
+#lovable-badge {
+  display: none !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 96%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 245 58% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 42 100% 62%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 245 58% 51%;
+
+    --radius: 1rem;
+
+    /* Custom tokens */
+    --hero-start: 222 47% 14%;
+    --hero-end: 240 40% 22%;
+    --hero-foreground: 0 0% 100%;
+    --success: 152 69% 41%;
+    --success-foreground: 0 0% 100%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 245 58% 51%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 245 58% 51%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 220 20% 96%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 220 20% 96%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 220 20% 96%;
+
+    --primary: 245 58% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 40% 16%;
+    --secondary-foreground: 220 20% 96%;
+
+    --muted: 222 40% 16%;
+    --muted-foreground: 220 9% 55%;
+
+    --accent: 42 100% 62%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 220 20% 96%;
+
+    --border: 222 40% 16%;
+    --input: 222 40% 16%;
+    --ring: 245 58% 60%;
+
+    --hero-start: 222 47% 8%;
+    --hero-end: 240 40% 14%;
+    --hero-foreground: 0 0% 100%;
+    --success: 152 69% 41%;
+    --success-foreground: 0 0% 100%;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 220 20% 96%;
+    --sidebar-primary: 245 58% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 40% 16%;
+    --sidebar-accent-foreground: 220 20% 96%;
+    --sidebar-border: 222 40% 16%;
+    --sidebar-ring: 245 58% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(
+      145deg,
+      hsl(var(--hero-start)) 0%,
+      hsl(var(--hero-end)) 100%
+    );
+  }
+}

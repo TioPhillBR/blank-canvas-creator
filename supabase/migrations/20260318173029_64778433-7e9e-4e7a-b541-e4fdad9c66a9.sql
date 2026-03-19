@@ -1,0 +1,1 @@
+ALTER TABLE public.news ADD COLUMN IF NOT EXISTS published_at timestamptz DEFAULT now();
