@@ -1,7 +1,0 @@
-
-ALTER TABLE public.employees
-  ADD COLUMN IF NOT EXISTS whatsapp text,
-  ADD COLUMN IF NOT EXISTS birth_date date,
-  ADD COLUMN IF NOT EXISTS gender text,
-  ALTER COLUMN rg DROP NOT NULL,
-  ALTER COLUMN rg SET DEFAULT '';
