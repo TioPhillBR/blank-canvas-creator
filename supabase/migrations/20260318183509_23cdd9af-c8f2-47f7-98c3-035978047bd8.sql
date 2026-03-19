@@ -1,1 +1,0 @@
-ALTER TABLE public.wristbands ADD COLUMN role public.app_role NOT NULL DEFAULT 'employee';
