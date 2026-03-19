@@ -1,7 +1,0 @@
-project_id = "wlbchdwezcvtnprjipsw"
-
-[functions.invite-user]
-verify_jwt = false
-
-[functions.wristband-signup]
-verify_jwt = false

@@ -1,1 +1,0 @@
-ALTER TABLE public.wristbands ALTER COLUMN employee_id DROP NOT NULL;
