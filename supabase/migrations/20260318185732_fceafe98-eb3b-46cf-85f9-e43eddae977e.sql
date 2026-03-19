@@ -1,0 +1,1 @@
+ALTER TABLE public.clock_records ADD COLUMN edited boolean NOT NULL DEFAULT false;

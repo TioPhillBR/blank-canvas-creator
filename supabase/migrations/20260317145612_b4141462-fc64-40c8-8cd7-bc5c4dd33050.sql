@@ -1,0 +1,2 @@
+UPDATE notifications SET image_url = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600' WHERE id = 'dd972c0b-c72c-4e14-93a4-860aa34056da';
+UPDATE notifications SET image_url = 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600' WHERE id = 'f13fce6b-04eb-4fea-bebe-4cde3053a190';
